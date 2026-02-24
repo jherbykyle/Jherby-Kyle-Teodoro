@@ -1,6 +1,7 @@
 # ============================================================
 # Dual-Task Physics-Guided ML Framework
 # Target: ΔE (HOMO–LUMO Gap)
+# Made by Jherby Kyle C. Teodoro
 # ============================================================
 
 import os
@@ -22,7 +23,7 @@ output_dir = r"C:\Users\PTRI\Desktop\electro"
 os.makedirs(output_dir, exist_ok=True)
 
 # ============================================================
-# 1️⃣ BASE DATA
+# 1️⃣ BASE DATA (source: https://doi.org/10.1038/s41598-024-77629-7)
 # ============================================================
 
 data = {
@@ -204,4 +205,5 @@ plt.savefig(os.path.join(output_dir,"07_PredictionInterval.png"))
 plt.close()
 
 print("\nALL RESULTS SAVED TO:", output_dir)
+
 print("ANALYSIS COMPLETE.")
